@@ -25,9 +25,9 @@ module.exports = {
 			test: /[^A-Za-z0-9]/,
 		}, {
 			name: 'Confirmed',
-			test(input)
+			test(input, valid)
 			{
-				$ctrl.showConfirm = true;
+				$ctrl.showConfirm = valid;
 				return input === $ctrl.confirm;
 			},
 		}];
@@ -42,7 +42,7 @@ module.exports = {
 				var state;
 				if(typeof validator.test === 'function')
 				{
-					state = validator.test(input);
+					state = validator.test(input, valid);
 				}
 				else
 				{
@@ -53,7 +53,6 @@ module.exports = {
 				if(!state)
 				{
 					valid = false;
-					break;
 				}
 			}
 			
