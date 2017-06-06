@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+
+:not(.no-transition) {
+	transition: .1s ease-out;
+	transition-property: background, color, opacity, border, border-radius, box-shadow, transform, max-width, max-height;
+}
+
+html, body {
+	overflow-x: hidden;
+	width: 100%;
+}
+
+body {
+	font-family: 'Roboto Slab';
+	background: #F5F5F5;
+	color: #111;
+}
+
+
+.btn, .form-control {
+	border-radius: 0;
+}
+
+::selection {
+	background: #444;
+	color: #EEE;
+}
+
+.noselect {
+	cursor: default;
+}
+
+.noselect::selection, .noselect ::selection {
+	background: inherit;
+	color: inherit;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+	background: #DDD;
+}
+ 
+::-webkit-scrollbar-thumb {
+	background: #AAA;
+}
+ 
+::-webkit-scrollbar-thumb:HOVER {
+	background: #999;
+}
