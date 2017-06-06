@@ -2,7 +2,7 @@
 
 Convenience test server: [https://objtest-rvanasa.c9users.io/]
 
-Feautures:
+Features:
 - Responsive UI
 - Utilization of Sorcerer, my backend IoC framework ('sorc' on npm)
 - Minification/compression of JS/CSS via Webpack and Express
