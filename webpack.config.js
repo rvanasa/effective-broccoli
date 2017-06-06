@@ -45,7 +45,7 @@ var config = {
 			sourceMap: true,
 		}),
 		new HtmlWebpackPlugin({
-			template: srcPath + '/../view/index.ejs',
+			template: srcPath + '/../www/index.ejs',
 			inject: 'head',
 		}),
 		new ExtractTextPlugin('[name].[hash].css')
