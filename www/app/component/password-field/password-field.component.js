@@ -24,7 +24,7 @@ module.exports = {
 			name: 'Symbol',
 			test: /[^A-Za-z0-9]/,
 		}, {
-			name: 'Both passwords match',
+			name: 'Confirmed',
 			test(input)
 			{
 				$ctrl.showConfirm = true;
